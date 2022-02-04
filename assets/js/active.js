@@ -100,8 +100,8 @@
     $('.testi-slider.owl-carousel').owlCarousel({
         loop: true,
         margin: 20,
-        nav: false,
-        dots: true,
+        nav: true,
+        dots: false,
         smartSpeed: 2000,
         autoplay: false,
         autoplayTimeout: 4000,
@@ -113,10 +113,10 @@
                 items: 1
             },
             768: {
-                items: 1
+                items: 2
             },
             992: {
-                items: 1
+                items: 2
             }
         }
     });

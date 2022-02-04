@@ -356,15 +356,51 @@
     .navbar-brand .navbar-brand-regular{
         max-width: 330px;
     }
+    .pro-box .img img{
+        width: 100%;
+    }
+    .product-head h2{
+        font-size: 28px;
+    }
 }
 
 @media(max-width: 767px){
-
+    .product-head h2{
+        font-size: 25px;
+    }
+    .product-head h2::before{
+        right: 20%;
+    }
+    .product-head h2::after{
+        left: 20%;
+    }
+    .pro-box .img img{
+        width: 100%;
+    }
+    .popupleft-content{
+        display: none;
+    }
+    .pp-left{
+        display: none;
+    }
+    .footer-btn{
+        float: none;
+        margin: 50px 0;
+    }
+    .brand-large-box{
+        flex: 0 0 100%;
+    }
+    .brand-box{
+        flex: 0 0 23%;
+    }
+    .about-inner .head h1{
+        font-size: 35px;
+    }
 }
 
 @media(max-width:575px){
     .welcome-area{
-        height: 380px;
+        height: 400px;
     }
     .pr-100{
         padding-right: 15px;
@@ -374,13 +410,13 @@
         font-size: 16px;
     }
     .form-title h4{
-        font-size: 15px;
+        font-size: 22px;
     }
     .navbar-brand .navbar-brand-regular {
-        max-width: 230px;
+        max-width: 160px;
     }
     .navbar-sticky-on .navbar-brand-sticky{
-        max-width: 230px;
+        max-width: 160px;
     }
     .enq-top{
         font-size: 15px;
@@ -391,8 +427,106 @@
     }
     .welcome-form{
         padding: 55px 35px;
+        margin-top: 600px;
     }
     .form-group input[type="submit"] {
         height: 50px;
+    }
+    .about-area{
+        padding-top: 355px;
+        background-color: #bc1d26;
+        background-image: none;
+    }
+    .about-inner .head h1{
+        font-size: 30px;
+    }
+    .brand-large-box{
+        margin-bottom: 20px;
+    }
+    .brand-large-box h2{
+        font-size: 28px;
+        padding: 12px 0;
+    }
+    .brand-large-box, .brand-box{
+        min-height: auto;
+    }
+    .brands-area{
+        padding: 50px 0;
+    }
+    .brand-box{
+        flex: 0 0 30%;
+    }
+    .product-head h2{
+        margin-bottom: 38px;
+    }
+    .product-head h2::before {
+        right: 15%;
+    }
+    .product-head h2::after {
+        left: 15%;
+    }
+    .letter_inner .heading h2{
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+    #letter5 select, #letter5 input{
+        height: 50px;
+    }
+    .testi-head h1{
+        max-width: 200px;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .testi-slider .owl-nav button{
+        height: 40px;
+        width: 40px;
+        line-height: 35px !important;
+    }
+    .testi-slider .owl-nav button span{
+        font-size: 40px;
+    }
+    .single-testi .img{
+        margin-bottom: 18px;
+    }
+    .single-testi .img img{
+        max-width: 35px;
+    }
+    .testi-btn a{
+        letter-spacing: 1px;
+        font-size: 17px;
+    }
+    .search-box{
+        padding-left: 20px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .contact-box{
+        margin-bottom: -165px;
+    }
+    .search-box .input-group .custom-select{
+        height: 50px;
+    }
+    .search-box .input-group .input-group-append a{
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .footer-section{
+        padding-top: 235px;
+    }
+    .search-box h3{
+        font-size: 24px;
+        margin: 10px 0 20px;
+    }
+    .footer-btn a{
+        font-size: 16px;
+        padding: 18px;
+        letter-spacing: 1px;
+    }
+    .modal.fade .modal-dialog{
+        top: 42%;
+    }
+    .contact-bg{
+        display: none;
     }
 }

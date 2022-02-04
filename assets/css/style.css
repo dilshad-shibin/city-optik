@@ -569,7 +569,7 @@ img {
 }
 
 .download-close:hover{
-    background: #c5a10f;
+    background: #c81f28;
 }
 
 .download-close span {
@@ -608,7 +608,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    background: linear-gradient(to right, #ffc343 0%, transparent 100%);
+    background: linear-gradient(to right, #c81f28 0%, transparent 100%);
     z-index: 99;
 }
 
@@ -706,17 +706,17 @@ img {
 
 .model-project-details .form-group input::-webkit-input-placeholder,
 .model-project-details .form-group textarea::-webkit-input-placeholder {
-    color: #fff;
+    color: #000;
 }
 
 .model-project-details .form-group input:-ms-input-placeholder,
 .model-project-details .form-group textarea:-ms-input-placeholder {
-    color: #fff;
+    color: #000;
 }
 
 .model-project-details .form-group input::placeholder,
 .model-project-details .form-group textarea::placeholder {
-    color: #fff;
+    color: #000;
 }
 
 .model-project-details input:focus,
@@ -724,12 +724,74 @@ img {
 .model-project-details select:focus {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e69746;
-    color: #fff;
+    border: 1px solid #c81f28;
+    color: #000;
     background: transparent;
 }
 
+.popupleft-content,
+.modal-optik{
+    background-color: #feaa36;
+}
 
+.popupleft-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+    background-image: url(../img/bg/contact-bg.jpg);
+    background-size: cover;
+}
+/* 
+.popupleft-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+} */
+
+.popupleft-content h4{
+    color: #fff;
+    font-weight: 400;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.popupleft-content h3 {
+    font-weight: 500;
+    color: #fff;
+    font-size: 23px;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+
+.popupleft-content h3 span{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+
+/* #letter5 select, #letter5 input{
+    color: #fff;
+} */
+
+
+#letter5 input[type="submit"]{
+    color: #fff;
+}
+
+
+.model-project-details input[type="submit"]:focus{
+    color: #fff;
+    background-color: #000;
+}
+ 
 /* ******************************
 :: 4.0  About AREA 
 ****************************** */
@@ -789,7 +851,6 @@ img {
 .brand-main{
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
 }
 
 .brand-large-box,
@@ -805,6 +866,8 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+    margin-bottom: 5px;
+
 }
 
 .brand-large-box h2{
@@ -819,5 +882,321 @@ img {
     overflow: hidden;
     border-radius: 6px;
     border: 1px solid #ccc;
+    margin: 0 5px;
+    margin-bottom: 10px;
 }
 
+.brand-box:nth-of-type(5){
+    margin-left: 0;
+}
+
+/* products-area */
+.products-area{
+    padding-bottom: 100px;
+}
+
+.product-head h2{
+    color: #2a2a2a;
+    font-size: 38px;
+    position: relative;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+.product-head h2::before{
+    position: absolute;
+    content: "";
+    background-color: #c81f28;
+    right: 26%;
+    height: 2px;
+    width: 12%;
+    top: 50%;
+}
+
+.product-head h2::after{
+    position: absolute;
+    content: "";
+    background-color: #c81f28;
+    left: 26%;
+    height: 2px;
+    width: 12%;
+    top: 50%;
+}
+
+.pro-box{
+    position: relative;
+    background-color: #f2f3f3;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.pro-box .text{
+    /* background-color: #c81f28; */
+}
+
+.pro-box .text h3{
+    color: #fff;
+    /* padding: 30px 0; */
+}
+
+.pro-box .text h3 a{
+    color: #fff;
+    transition: all .3s ease;
+    background: #c81f28;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pro-box .text h3 a:hover{
+    text-decoration: underline;
+}
+
+.pro-box .img{
+    background-color: #f2f3f3;
+}
+
+/* ******************************
+:: 6.0  Testimonials AREA 
+****************************** */
+.testi-area{
+    background-color: #e8edef;
+    padding: 100px 0;
+}
+
+.testi-head h1{
+    color: #2a2a2a;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.single-testi{
+    background-color: #fff;
+    padding: 50px;
+}
+
+.single-testi p{
+    color: #7c7c7c;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.single-testi .name h3{
+    color: #2a2a2a;
+    font-weight: 500;
+    text-align: right;
+}
+
+.single-testi .name h3 span{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+
+.single-testi .img{
+    margin-bottom: 30px;
+}
+
+.testi-slider .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+
+.testi-slider .owl-nav button{
+    color: #7c7c7c !important;
+    border: 1px solid #7c7c7c !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    line-height: 42px !important;
+    transition: all .3s ease;
+}
+
+.testi-slider .owl-nav button span{
+    font-size: 45px;
+}
+
+.testi-slider .owl-nav [class*=owl-]:hover{
+    background-color: #c81f28;
+    border: 1px solid #c81f28 !important; 
+}
+
+.testi-slider .owl-nav [class*=owl-]:hover span{
+    color: #fff;
+}
+
+.testi-btn{
+    margin-top: 70px;
+}
+
+.testi-btn a{
+    color: #fff;
+    background-color: #c81f28;
+    border: 1px solid #c81f28;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #c81f28;
+    transition: all .3s ease;
+}
+
+.testi-btn a:hover{
+    color: #c81f28;
+    background-color: transparent;
+    box-shadow: 0 0 5px #c81f28;
+}
+
+/* ******************************
+:: 7.0  Contact AREA 
+****************************** */
+.contact-area{
+    position: relative;
+    background: #e8edef;
+}
+
+.contact-box{
+    position: relative;
+    background-color: #feaa36;
+    margin-bottom: -200px;
+    z-index: 99;
+}
+
+.contact-bg{
+    background-image: url(../img/bg/contact-bg.jpg);
+    height: 390px;
+    width: 510px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.search-box{
+    padding: 130px 0 110px;
+    padding-left: 70px;
+}
+
+.search-box h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0 30px;
+    text-transform: uppercase;
+}
+
+.search-box .input-group{
+    width: 100%;
+    max-width: 470px;
+}
+
+.search-box .input-group .custom-select{
+    height: 60px;
+    flex: 0 0 70%;
+}
+
+.search-box .input-group .input-group-append{
+    flex: 0 0 22%;
+}
+
+.search-box .input-group .input-group-append a{
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    background: #c92031;
+}
+
+/* ******************************
+:: 8.0  Footer AREA 
+****************************** */
+.footer-section{
+    background-color: #36373d;
+    padding-top: 300px;
+}
+
+.footer-ct,.footer-mail{
+    margin-bottom: 30px;
+}
+
+.footer-ct h3{
+    color: #adadad;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.footer-mail{
+    color: #adadad;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.footer-ct a{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.footer-ct a:hover{
+    color: #c81f28;
+}
+
+.footer-mail h4{
+    color: #adadad;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.footer-mail a{
+    color: #fffc;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+.footer-mail a:hover{
+    text-decoration: underline;
+}
+
+.footer-btn a{
+    color: #fff;
+    background-color: #c81f28;
+    border: 1px solid #c81f28;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 22px;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+.footer-btn{
+    float: right;
+}
+
+.footer-btn a:hover{
+    color: #fff;
+    background-color: transparent;
+}
+
+.copy-right a img{
+    max-width: 100px;
+}
+
+.copy-right{
+    border-top: 1px solid #adadad;
+    padding: 30px 0;
+}
+
+.copy-right p{
+    color: #adadad;
+}
